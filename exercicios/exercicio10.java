@@ -3,7 +3,8 @@
 // adicionar, remover e atualizar itens no estoque. Utilize classes, listas e estruturas
 // condicionais
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 class ItemEstoque {
     private String nome;

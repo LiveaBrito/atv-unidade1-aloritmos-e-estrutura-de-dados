@@ -2,7 +2,7 @@
 // • Crie um programa que solicite ao usuário que insira uma lista de números inteiros e, em
 // seguida, encontre e exiba o número que mais se repete.
 
-import java.util.*;
+import java.util.Scanner;
 
 public class exercicio8 {
 
