@@ -31,7 +31,7 @@ class ItemEstoque {
 public class exercicio10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<ItemEstoque> estoque = new ArrayList<>();
+        ArrayList<ItemEstoque> estoque = new ArrayList<>();
 
         boolean continuar = true;
 
