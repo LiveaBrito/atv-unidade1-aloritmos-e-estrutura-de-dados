@@ -27,7 +27,7 @@ class ItemEstoque {
     }
 }
 
-public class exercicio10 {
+public class exe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<ItemEstoque> estoque = new ArrayList<>();
