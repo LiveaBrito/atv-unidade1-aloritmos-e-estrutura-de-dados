@@ -1,31 +1,45 @@
 // Exercício 5: Matrizes (Arrays)
 // • Crie uma matriz (array) de números inteiros. Encontre e imprima o maior valor na matriz. 
 
+import java.util.Scanner;
+
 public class exercicio5 {
 
-    public class ex5_uni1 {
     public static void main(String[] args) {
-        // Criando a matriz de números inteiros
-        int[][] matriz = {
-            {3, 8, 1},
-            {5, 12, 9},
-            {7, 21, 10}
-        };
 
-        int maiorValor = matriz[0][0]; // Assumindo que o primeiro elemento é o maior
+        Scanner scanner = new Scanner(System.in);
 
-        // Encontrando o maior valor na matriz
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                if (matriz[i][j] > maiorValor) {
-                    maiorValor = matriz[i][j];
+        System.out.print("Digite o número de linhas: ");
+        int linhas = scanner.nextInt();
+
+        System.out.print("Digite o número de colunas: ");
+        int colunas = scanner.nextInt();
+
+        int[][] matriz = new int[linhas][colunas];
+
+        // Preenchendo a matriz
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                System.out.print("Digite o valor para posição [" + i + "][" + j + "]: ");
+                matriz[i][j] = scanner.nextInt();
+            }
+        }
+
+        // Encontrando o maior valor
+        int maior = matriz[0][0];
+
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                if (matriz[i][j] > maior) {
+                    maior = matriz[i][j];
                 }
             }
         }
 
-        // Imprimindo o maior valor encontrado na matriz
-        System.out.println("O maior valor na matriz é: " + maiorValor);
+        System.out.println("O maior valor da matriz é: " + maior);
+
+        scanner.close();
     }
 }
+
     
-}
