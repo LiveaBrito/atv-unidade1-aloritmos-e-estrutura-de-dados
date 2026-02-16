@@ -3,8 +3,6 @@
 // tela. 
 
 public class exercicio6 {
-
-    public class ex6_uni1 {
     public static void main(String[] args) {
         System.out.println("Números primos entre 1 e 100:");
 
@@ -29,4 +27,3 @@ public class exercicio6 {
     }
 }
     
-}
