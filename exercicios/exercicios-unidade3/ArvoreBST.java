@@ -1,5 +1,4 @@
 // Árvore Binária e BST (Árvore Binária de Busca)
-// Árvore Binária e BST (Árvore Binária de Busca)
 // 1 - Implementação da Árvore Binária:
 // Crie uma classe em Java para representar uma árvore binária e implemente métodos para inserir elementos, percorrer a árvore em pré-ordem, pós-ordem e em ordem.
 // 2 - Validação de BST:

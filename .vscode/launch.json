@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "exercicio1",
+            "request": "launch",
+            "mainClass": "exercicio1",
+            "projectName": "atv-unidade1-aloritmos-e-estrutura-de-dados_11c1633a"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

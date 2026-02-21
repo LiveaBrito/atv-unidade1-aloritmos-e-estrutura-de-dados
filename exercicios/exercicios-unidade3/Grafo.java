@@ -47,9 +47,9 @@ public class Grafo {
         System.out.println();
     }
 
-    // =========================
+    // =====================================
     // EXERCÍCIO 6 - Busca de Caminho (BFS)
-    // =========================
+    // =====================================
     public boolean existeCaminho(int origem, int destino) {
         Set<Integer> visitados = new HashSet<>();
         Queue<Integer> fila = new LinkedList<>();
@@ -95,9 +95,9 @@ public class Grafo {
         }
     }
 
-    // =========================
+    // =========================================
     // EXERCÍCIO 9 - Caminho mais curto (BFS)
-    // =========================
+    // ==========================================
     public List<Integer> caminhoMaisCurto(int origem, int destino) {
         Map<Integer, Integer> anterior = new HashMap<>();
         Queue<Integer> fila = new LinkedList<>();
@@ -134,9 +134,9 @@ public class Grafo {
         return caminho;
     }
 
-    // =========================
+    // =====================================
     // EXERCÍCIO 10 - Ordenação Topológica
-    // =========================
+    // ======================================
     public void ordenacaoTopologica() {
         Set<Integer> visitados = new HashSet<>();
         Stack<Integer> pilha = new Stack<>();

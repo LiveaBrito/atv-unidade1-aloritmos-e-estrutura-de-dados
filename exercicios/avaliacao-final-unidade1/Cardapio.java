@@ -1,17 +1,16 @@
-import java.util.ArrayList;
+// import java.util.HashMap;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.List;
 
 public class Cardapio {
+
     private Map<String, Double> cardapio;
 
     public Cardapio() {
-        this.cardapio = new HashMap<>();
-        inicializarCardapio();
-    }
 
-    private void inicializarCardapio() {
+        cardapio = new HashMap<>();
+
         cardapio.put("Margherita", 30.00);
         cardapio.put("Pepperoni", 35.00);
         cardapio.put("Quatro queijos", 37.00);
@@ -24,27 +23,24 @@ public class Cardapio {
         cardapio.put("Especial da casa", 42.20);
     }
 
-    public Map<String, Double> getCardapio(){
+    public Map<String, Double> getCardapio() {
         return cardapio;
     }
 
-    public double getPrecoJusto(List<String> sabores){
-        List<String> saboresEncontrados = new ArrayList<>();
-        double precoTotal = 0.0;
-        int totalSabores = 0;
+    public double getPrecoJusto(List<String> sabores) {
+
+        double maior = 0;
+
         for (String sabor : sabores) {
+
             if (cardapio.containsKey(sabor)) {
-                saboresEncontrados.add(sabor);
-                totalSabores++;
-            }else{
-                System.out.println("Pizza "+sabor+" não encontrado!");
+
+                if (cardapio.get(sabor) > maior) {
+                    maior = cardapio.get(sabor);
+                }
             }
         }
 
-        for (String sabor : saboresEncontrados) {
-            precoTotal += cardapio.get(sabor)/totalSabores;
-        }
-
-        return precoTotal;
+        return maior;
     }
 }
